@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  background: url(/img/frog-3428988_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  height: 374px;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    height: 500px;
+  }
+}
+header .contactPage {
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  background: white;
+  max-width: 584px;
+  margin-bottom: 100px;
+  padding: 40px 30px 30px 45px;
+  height: 875px;
+  box-shadow: 0px 4px 28px 0px rgba(28, 133, 166, 0.1294117647);
+  border-radius: 8px;
+}
+@media screen and (max-width: 1200px) {
+  header .contactPage {
+    position: absolute;
+    margin-top: 800px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 910px;
+    max-width: 800px;
+  }
+}
+header .contactPage h1 {
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+header .contactPage p {
+  margin: 15px 0;
+  line-height: 32.4px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+header .contactPage ul {
+  display: flex;
+  align-items: center;
+}
+header .contactPage .Buttons {
+  height: 50px;
+  width: 100px;
+  margin: 30px 0;
+  padding: 0;
+}
+header .contactPage .Buttons:hover li:not(:hover) {
+  background: #EFEFEF;
+  color: black;
+}
+header .contactPage .Buttons li {
+  margin-right: 10px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .contactPage .Buttons li:first-child {
+  background: #9DD129;
+  color: white;
+}
+header .contactPage .Buttons li:hover {
+  background: #9DD129;
+  color: white;
+}
+header .contactPage .Buttons li .grenouille {
+  margin-right: 10px;
+  filter: grayscale(100%) invert(100%);
+}
+header .contactPage .Buttons li .grenouille2 {
+  margin-right: 10px;
+}
+header .contactPage .form-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "nom prenom" "telephone telephone" "email email" "adresse adresse" "postal ville";
+}
+header .contactPage .form-grid input {
+  width: 100%;
+  margin: 5px 0 40px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #D0D0D0;
+  font-weight: 400;
+}
+header .contactPage .form-grid .enfant1 {
+  grid-area: nom;
+}
+header .contactPage .form-grid .enfant1 #name {
+  width: 90%;
+}
+header .contactPage .form-grid .enfant2 {
+  grid-area: prenom;
+}
+header .contactPage .form-grid .enfant3 {
+  grid-area: telephone;
+}
+header .contactPage .form-grid .enfant4 {
+  grid-area: email;
+}
+header .contactPage .form-grid .enfant5 {
+  grid-area: adresse;
+}
+header .contactPage .form-grid .enfant6 {
+  grid-area: postal;
+}
+header .contactPage .form-grid .enfant6 #code {
+  width: 80%;
+}
+header .contactPage .form-grid .enfant7 {
+  grid-area: ville;
+}
+header .contactPage .form-grid input {
+  padding: none;
+}
+header #contactChoice2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 20%;
+  background: #9DD129;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+  box-shadow: 0 0 0 1px #9DD129;
+}
+header #contactChoice2:hover {
+  border: 3px solid #ffffff;
+}
+header label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25.2px;
+}
+header .center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .center-button #button {
+  height: 57px;
+  width: 198px;
+  background: #9DD129;
+  border-radius: 44px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  border: none;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  header .center-button #button {
+    margin-bottom: 300px;
+  }
+}
+header .center-button #button:hover {
+  background: #749c1c;
+}
+
+footer {
+  top: 50%;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    position: relative;
+  }
+}
+footer .left-part {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin-top: 250px;
+}
+@media screen and (max-width: 1200px) {
+  footer .left-part {
+    position: absolute;
+    left: 20%;
+  }
+}
+footer .left-part .fa-facebook-square:before, footer .left-part .fa-square-facebook:before {
+  content: "\f082";
+}
+@media screen and (max-width: 1200px) {
+  footer .left-part .fa-facebook-square:before, footer .left-part .fa-square-facebook:before {
+    margin-left: 300px;
+  }
+}
+footer .left-part h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  footer .left-part h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+}
+footer .left-part p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  footer .left-part p {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+footer .left-part .email {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  footer .left-part .email {
+    font-size: 40px;
+  }
+}
+footer .left-part i {
+  font-size: 24px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 500px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1200px) {
+  footer .left-part i {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+footer .left-part .facebook-icon {
+  border-radius: 0;
+}/*# sourceMappingURL=index.css.map */
