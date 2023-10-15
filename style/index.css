@@ -16,9 +16,8 @@ header {
   background: url(/img/frog-3428988_1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
   background-size: cover;
-  height: 374px;
+  height: 600px;
   width: 100%;
   position: relative;
 }
